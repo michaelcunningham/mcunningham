@@ -1,0 +1,8 @@
+#!/bin/sh
+
+BASHRC_DIR=$(dirname $BASH_SOURCE)
+
+. $BASHRC_DIR/mwc
+. $BASHRC_DIR/std_alias
+. $BASHRC_DIR/pg_alias
+. $BASHRC_DIR/set_prompt
