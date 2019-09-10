@@ -1,7 +1,5 @@
 #?/bin/sh
 
-. /mnt/dba/sh/std_alias
-
 if [ -f /etc/oratab ]
 then
 for DB in `cat /etc/oratab | egrep -v "^$|^#|^-" | grep -v \* | cut -d: -f1`
