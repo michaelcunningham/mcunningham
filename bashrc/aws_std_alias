@@ -1,0 +1,6 @@
+alias lir='/mnt/dba/aws/admin/login_to_ramblas.sh'
+alias rl='/mnt/dba/aws/admin/run_script_ramblas.sh /mnt/dba/aws/scripts/shlocks.sql'
+alias rq='/mnt/dba/aws/admin/run_script_ramblas.sh /mnt/dba/aws/scripts/rq.sql'
+alias rsa='cd /mnt/dba/aws/admin;pwd'
+alias rsinf='/mnt/dba/aws/admin/run_script_ramblas.sh /mnt/dba/aws/scripts/rsinf.sql'
+alias rss='cd /mnt/dba/aws/scripts;pwd'
