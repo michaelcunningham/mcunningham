@@ -4,6 +4,7 @@ alias imdb='cd /mnt/dba/projects/imdb_conversion;pwd'
 alias tdb='cd /mnt/dba/projects/tdb_conversion;pwd'
 alias pdb='cd /mnt/dba/projects/pdb_conversion;pwd'
 alias tagdb='cd /mnt/dba/projects/tagdb_conversion;pwd'
+alias whse='cd /mnt/dba/projects/whse_conversion;pwd'
 
 alias mmdb-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-east-1.rds.amazonaws.com -p 5432 mmdb -U postgres'
 alias mmdb-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 mmdb -U postgres'
