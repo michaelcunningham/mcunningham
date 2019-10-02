@@ -21,3 +21,4 @@ alias dbahelp='less /mnt/dba/README.md'
 alias dfm="df -P -m | sed \"s/1048576-blocks/MB_blocks/g\" | sed \"s/Capacity/%Used/g\" | awk '{printf(\"%-45s%13s%10s%11s%11s  %-s\\n\", \$1,\$2,\$3,\$4,\$5,\$6)}'"
 alias tickets='cd /mnt/dba/tickets/;pwd'
 alias dbadmin='cd /mnt/dba/admin/;pwd'
+alias mcunningham='cd ~/repos/mcunningham;pwd'

@@ -9,6 +9,7 @@ alias etl='cd /mnt/dba/projects/etl_conversion;pwd'
 
 alias mmdb-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-east-1.rds.amazonaws.com -p 5432 mmdb -U postgres'
 alias mmdb-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 mmdb -U postgres'
+alias mmdb-prod='psql -h mmdb-tagged-pg.usw1.mtmeprod.com -p 5432 mmdb -U postgres'
 # commenting for now because I'm scared of typing something wrong.
 # alias mmdb-prod='psql -h mmdb-tagged-pg.usw1.mtmeprod.com -p 5432 mmdb -U postgres'
 alias imdb-prod='psql -h imdb-tagged-pg.usw1.mtmeprod.com -p 5432 imdb -U postgres'
