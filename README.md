@@ -1,7 +1,17 @@
-# The bashrc directory is for scripts that are normally run in the ~/.bashrc file
+# The bashrc directory in this repo is for scripts that are normally run in the ~/.bashrc file
+
+Quick install steps
+	mkdir -p ~/repos/mcunningham
+	cd ~/repos/mcunningham
+	git clone https://github.com/michaelcunningham/mcunningham.git .
+	source ./bashrc/bashrc_login
+
 To use these files add this line to the .bashrc file
 
 	source <repo_dir>/bashrc/bashrc_login
+	source ~/repos/mcunningham/bashrc/bashrc_login
+
+	echo "source ~/repos/mcunningham/bashrc/bashrc_login" >> ~/.bashrc
 
 May also need to run this on new servers
 
