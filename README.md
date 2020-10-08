@@ -19,3 +19,13 @@ May also need to run this on new servers
 	git remote set-url origin https://michaelcunningham@github.com/michaelcunningham/mcunningham.git
 	git config user.name michaelcunningham
 	git config user.email napacunningham@gmail.com
+
+NOTE: On some servers I have had to copy the .bash_profile
+
+	cp ~/.bash_profile ~/.profile
+
+NOTE: On some linux installations when "set -o vi" is used it will remove the tab-complete
+
+      Create the ~/.inputrc file to compensate for that 
+      echo "\"\C-i\": complete" > ~/.inputrc
+
