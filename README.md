@@ -1,6 +1,7 @@
 # The bashrc directory in this repo is for scripts that are normally run in the ~/.bashrc file
 
 Quick install steps
+
 	mkdir -p ~/repos/mcunningham
 	cd ~/repos/mcunningham
 	git clone https://github.com/michaelcunningham/mcunningham.git .
