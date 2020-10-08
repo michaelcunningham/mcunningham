@@ -15,6 +15,6 @@ To use these files add this line to the .bashrc file
 
 May also need to run this on new servers
 
-	git config --global user.email "mcunningham@themeetgroup.com"
-	git config --global user.name "Michael Cunningham"
-
+	git remote set-url origin https://michaelcunningham@github.com/michaelcunningham/mcunningham.git
+	git config --global user.name michaelcunningham
+	git config --global user.email napacunningham@gmail.com
