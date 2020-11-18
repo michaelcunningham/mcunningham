@@ -24,6 +24,10 @@ NOTE: On some servers I have had to copy the .bash_profile
 
 	cp ~/.bash_profile ~/.profile
 
+NOTE: I also like to add this to keep the text from vi visible after exiting vi
+
+	echo "set t_ti= t_te=" > ~/.vimrc
+
 NOTE: On some linux installations when "set -o vi" is used it will remove the tab-complete
 
       Create the ~/.inputrc file to compensate for that 
