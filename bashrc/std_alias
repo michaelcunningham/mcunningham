@@ -22,3 +22,4 @@ alias dfm="df -P -m | sed \"s/1048576-blocks/MB_blocks/g\" | sed \"s/Capacity/%U
 alias tickets='cd /mnt/dba/tickets/;pwd'
 alias dbadmin='cd /mnt/dba/admin/;pwd'
 alias mcunningham='cd ~/repos/mcunningham;pwd'
+alias autovacuum='cd ~/repos/autovacuum;pwd'
