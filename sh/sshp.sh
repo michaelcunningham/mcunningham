@@ -16,7 +16,16 @@ and     i.instance_group = s.instance_group
 and     i.instance = s.primary_instance
 and     i.instance_group = '$INSTANCE_GROUP';"
 
+SQL_COMMAND="select  hostname
+from    pg.host_instances
+where   ( instance_group = '$INSTANCE_GROUP' or hostname ~ '$INSTANCE_GROUP' )
+and     is_primary = true;"
+
 ########################################################################################################################
+echo
+echo $SQL_COMMAND
+echo
+
 this_output=$(psql -AXt -h $HOST -d $DB -p $PORT -U $USER -c "$SQL_COMMAND")
 
 this_host=$(echo $this_output | cut -d'|' -f1)

@@ -2,6 +2,8 @@ alias psp='/home/michael/repos/mcunningham/sh/psp.sh'
 alias pss='/home/michael/repos/mcunningham/sh/pss.sh'
 alias sshp='/home/michael/repos/mcunningham/sh/sshp.sh'
 alias sshs='/home/michael/repos/mcunningham/sh/sshs.sh'
+alias popaws='/home/michael/repos/mcunningham/sh/popaws.sh'
+alias explaindb='/home/michael/repos/mcunningham/sh/explaindb.sh'
 
 alias pg_alias='vi /home/michael/repos/mcunningham/bashrc/pg_alias ; . /home/michael/repos/mcunningham/bashrc/pg_alias'
 alias pg9='sudo ln -fs /usr/pgsql-9.6/bin/psql /usr/bin/psql'
@@ -96,3 +98,6 @@ alias next-date-prod='psql -h next-date-pgsql.use1.amz.mtmeprod.com -p 5432 -d n
 alias levels-prod='psql -h levels-pgsql.use1.amz.mtmeprod.com -p 5432 -d levels -U postgres'
 alias tmgchat-stage='psql -h tmg-chat-pg.use1.amz.mtmestage.com -p 5432 -d chat -U postgres'
 alias tmgchat-prod='psql -h tmg-chat-pg.use1.amz.mtmeprod.com -p 5432 -d chat -U postgres'
+
+alias video-meetme-prod='psql -h video-pg-meetme.use1.amz.mtmeprod.com -p 5432 -d video -U postgres'
+alias broadcast-hist-prod='psql -h broadcast-hist-pgsql.use1.amz.mtmeprod.com -p 5432 -d broadcast_history -U postgres'
