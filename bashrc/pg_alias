@@ -101,3 +101,5 @@ alias tmgchat-prod='psql -h tmg-chat-pg.use1.amz.mtmeprod.com -p 5432 -d chat -U
 
 alias video-meetme-prod='psql -h video-pg-meetme.use1.amz.mtmeprod.com -p 5432 -d video -U postgres'
 alias broadcast-hist-prod='psql -h broadcast-hist-pgsql.use1.amz.mtmeprod.com -p 5432 -d broadcast_history -U postgres'
+
+alias video-kik-stage='psql -h video-kik-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
