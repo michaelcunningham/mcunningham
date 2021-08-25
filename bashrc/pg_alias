@@ -81,8 +81,8 @@ alias pgproxy1='psql -h pgproxy1.scs.mtmeprod.net -p 5432 -d production -U mcunn
 alias pgproxy2='psql -h pgproxy2.scs.mtmeprod.net -p 5432 -d production -U mcunningham'
 alias pgproxy3='psql -h pgproxy3.scs.mtmeprod.net -p 5432 -d production -U mcunningham'
 alias pgproxy4='psql -h pgproxy4.scs.mtmeprod.net -p 5432 -d production -U mcunningham'
-#alias popgun='psql -h popgundb.use1.amz.mtmeprod.com -p 5432 -U postgres -d pg -U mcunningham'
-alias popgun='psql -h popgundb.use1.amz.mtmeprod.com -p 5432 -U postgres -d pg -U postgres'
+#alias popgun='psql -h popgundb.use1.amz.mtmeprod.com -p 5432 -d pg -U mcunningham'
+alias popgun='psql -h popgundb.use1.amz.mtmeprod.com -p 5432 -d pg -U postgres'
 alias econtrans-prod='psql -h econtransdb-aurora-postgresql.amz.mtmeprod.com -p 5432 -d economy_transaction -U postgres'
 
 alias mars-stage='psql -h mars-pgsql.use1.amz.mtmestage.com -p 5432 -U postgres -d mars -U postgres'
@@ -116,3 +116,6 @@ alias video-amino-stage='psql -h video-amino-pg.use1.amz.mtmestage.com -p 5432 -
 alias video-kik-stage='psql -h video-kik-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 alias video-meetme-stage='psql -h video-meetme-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 alias video-zeta-stage='psql -h video-zeta-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
+
+alias datalake='psql -h mm-events.scs.mtmeprod.net -p 5439 -d evdata -U mcunningham'
+
