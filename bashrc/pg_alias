@@ -4,6 +4,8 @@ alias sshp='/home/michael/repos/mcunningham/sh/sshp.sh'
 alias sshs='/home/michael/repos/mcunningham/sh/sshs.sh'
 alias popaws='/home/michael/repos/mcunningham/sh/popaws.sh'
 alias explaindb='/home/michael/repos/mcunningham/sh/explaindb.sh'
+alias file10='ssh -l mcunningham file10.scs.mtmeprod.net'
+alias file11='ssh -l mcunningham file11.scs.mtmeprod.net'
 
 alias pg_alias='vi /home/michael/repos/mcunningham/bashrc/pg_alias ; . /home/michael/repos/mcunningham/bashrc/pg_alias'
 alias pg9='sudo ln -fs /usr/pgsql-9.6/bin/psql /usr/bin/psql'
