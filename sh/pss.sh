@@ -14,7 +14,7 @@ from    pg.instances i, pg.standbys s, pg.databases d
 where   i.instance_group = d.instance_group
 and     i.instance_group = s.instance_group
 and     i.instance = s.standby_instance
-and     i.instance_group = '$INSTANCE_GROUP';"
+and     ( i.instance_group = '$INSTANCE_GROUP' or i.hostname ~ '$INSTANCE_GROUP' );"
 
 ########################################################################################################################
 this_output=$(psql -AXt -h $HOST -d $DB -p $PORT -U $USER -c "$SQL_COMMAND")
@@ -31,6 +31,8 @@ echo
 echo "	HOST       = $this_host"
 echo "	PORT       = $this_port"
 echo "	DB         = $this_db"
+echo
+echo "	Executing  = psql -h $this_host -d $this_db -p $this_port -U mcunningham"
 echo
 echo "	############################################################"
 echo
