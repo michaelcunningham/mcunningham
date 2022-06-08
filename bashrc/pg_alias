@@ -10,6 +10,7 @@ alias file11='ssh -l mcunningham file11.scs.mtmeprod.net'
 alias pg_alias='vi /home/michael/repos/mcunningham/bashrc/pg_alias ; . /home/michael/repos/mcunningham/bashrc/pg_alias'
 alias pg9='sudo ln -fs /usr/pgsql-9.6/bin/psql /usr/bin/psql'
 alias pg10='sudo ln -fs /usr/pgsql-10/bin/psql /usr/bin/psql'
+alias pg12='sudo ln -fs /usr/share/postgresql-common/pg_wrapper /usr/bin/psql'
 
 alias mmdb='cd /mnt/dba/projects/mmdb_conversion;pwd'
 alias qdb='cd /mnt/dba/projects/qdb_conversion;pwd'
@@ -101,8 +102,9 @@ alias next-date-stage='psql -h next-date-pgsql.use1.amz.mtmestage.com -p 5432 -d
 alias next-date-prod='psql -h next-date-pgsql.use1.amz.mtmeprod.com -p 5432 -d next_date -U postgres'
 
 alias levels-prod='psql -h levels-pgsql.use1.amz.mtmeprod.com -p 5432 -d levels -U postgres'
-alias tmgchat-stage='psql -h tmg-chat-pg.use1.amz.mtmestage.com -p 5432 -d chat -U postgres'
+alias levels-stage='psql -h levels-pgsql.use1.amz.mtmestage.com -p 5432 -d levels -U postgres'
 alias tmgchat-prod='psql -h tmg-chat-pg.use1.amz.mtmeprod.com -p 5432 -d chat -U postgres'
+alias tmgchat-stage='psql -h tmg-chat-pg.use1.amz.mtmestage.com -p 5432 -d chat -U postgres'
 
 alias member-notes-stage='psql -h member-notes-pg.use1.amz.mtmestage.com -p 5432 -d postgres -U postgres'
 alias member-notes-prod='psql -h notes.use1.amz.mtmeprod.com -p 5432 -d postgres -U postgres'
@@ -116,7 +118,7 @@ alias video-zeta-prod='psql -h video-zeta-pg.use1.amz.mtmeprod.com -p 5432 -d vi
 
 alias video-amino-stage='psql -h video-amino-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 alias video-kik-stage='psql -h video-kik-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
-alias video-meetme-stage='psql -h video-meetme-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
+alias video-meetme-stage='psql -h video-pg-meetme.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 alias video-zeta-stage='psql -h video-zeta-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 
 alias datalake='psql -h mm-events.scs.mtmeprod.net -p 5439 -d evdata -U mcunningham'
