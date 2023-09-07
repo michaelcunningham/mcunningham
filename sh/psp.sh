@@ -8,6 +8,7 @@ HOST=popgundb.use1.amz.mtmeprod.com
 PORT=5432
 DB=pg
 USER=mcunningham
+USER=postgres
 
 SQL_COMMAND="select  i.hostname, i.port, d.database
 from    pg.instances i, pg.standbys s, pg.databases d

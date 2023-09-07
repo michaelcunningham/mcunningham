@@ -8,6 +8,7 @@ HOST=popgundb.use1.amz.mtmeprod.com
 PORT=5432
 DB=pg
 USER=mcunningham
+USER=postgres
 
 SQL_COMMAND="select  i.hostname
 from    pg.instances i, pg.standbys s, pg.databases d
@@ -36,6 +37,8 @@ echo
 echo "	ssh to primary server for $INSTANCE_GROUP"
 echo
 echo "	HOST = $this_host"
+echo
+echo "	Executing: ssh -l mcunningham $this_host"
 echo
 echo "	############################################################"
 echo

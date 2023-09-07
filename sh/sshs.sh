@@ -8,13 +8,14 @@ HOST=popgundb.use1.amz.mtmeprod.com
 PORT=5432
 DB=pg
 USER=mcunningham
+USER=postgres
 
 SQL_COMMAND="select  i.hostname
 from    pg.instances i, pg.standbys s, pg.databases d
 where   i.instance_group = d.instance_group
 and     i.instance_group = s.instance_group
 and     i.instance = s.standby_instance
-and     i.instance_group = '$INSTANCE_GROUP';"
+and     ( i.instance_group = '$INSTANCE_GROUP' or hostname ~ '$INSTANCE_GROUP' );"
 
 ########################################################################################################################
 this_output=$(psql -AXt -h $HOST -d $DB -p $PORT -U $USER -c "$SQL_COMMAND")
