@@ -1,0 +1,24 @@
+#!/bin/bash
+
+export SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+get_prod_hosts () {
+  POPGUN_HOST=popgundb.use1.amz.mtmeprod.com
+  POPGUN_DB=pg
+  POPGUN_USER=popgun
+  SQL="select instance_group || '.pg.mtmeprod.net' \
+       from   pg.instance_groups \
+       where  instance_group !~ 'dev' \
+       and    instance_group !~ 'proxy' \
+       and environment = 'prod' \
+       order by instance_group"
+
+  declare -a HOSTS=()
+
+  for this_host in `psql -X -t -h ${POPGUN_HOST} -d ${POPGUN_DB} -U ${POPGUN_USER} -c "${SQL}"`
+  do
+    HOSTS+=($this_host)
+  done
+
+  echo ${HOSTS[@]}
+}

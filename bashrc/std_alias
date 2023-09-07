@@ -26,3 +26,5 @@ alias mcunningham='cd ~/repos/mcunningham;pwd'
 alias mwc='cd ~/repos/mwc-playground;pwd'
 alias autovacuum='cd ~/repos/autovacuum;pwd'
 alias jumpbox_eu='ssh -l mcunningham -i id_rsa_jumpbox euw1-jumpbox.amz.mtmemgmt.com'
+alias runbox='ssh runbox1.scs.mtmeprod.net'
+alias tcred="/mnt/vmshare/tcred/create_terraform_credentials.sh ; source /mnt/vmshare/tcred/tcred.sh"
