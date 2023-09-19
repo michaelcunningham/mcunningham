@@ -4,6 +4,7 @@ alias sshp='/home/michael/repos/mcunningham/sh/sshp.sh'
 alias sshs='/home/michael/repos/mcunningham/sh/sshs.sh'
 alias popaws='/home/michael/repos/mcunningham/sh/popaws.sh'
 alias explaindb='/home/michael/repos/mcunningham/sh/explaindb.sh'
+alias run_command_all_pg='/home/michael/repos/mcunningham/sh/run_command_all_pg.sh'
 alias file10='ssh -l mcunningham file10.scs.mtmeprod.net'
 alias file11='ssh -l mcunningham file11.scs.mtmeprod.net'
 

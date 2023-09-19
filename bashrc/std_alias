@@ -28,3 +28,42 @@ alias autovacuum='cd ~/repos/autovacuum;pwd'
 alias jumpbox_eu='ssh -l mcunningham -i id_rsa_jumpbox euw1-jumpbox.amz.mtmemgmt.com'
 alias runbox='ssh runbox1.scs.mtmeprod.net'
 alias tcred="/mnt/vmshare/tcred/create_terraform_credentials.sh ; source /mnt/vmshare/tcred/tcred.sh"
+alias pupmanage="/home/michael/repos/puppetscripts/pupmanage"
+
+opendb ()
+{
+    function cleanup ()
+    {
+        ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
+    };
+    function lport ()
+    {
+        lower=10000;
+        upper=32000;
+        rand=$(od -A n -D -N 2 /dev/urandom | tr -d ' ');
+        while [ "$rand" -gt "$upper" -o "$rand" -lt "$lower" ]; do
+            rand=$(od -A n -D -N 2 /dev/urandom | tr -d ' ');
+        done;
+        echo $rand;
+        LPGPORT=$rand
+    };
+    local LPGPORT=5432;
+    lport;
+    echo $LPGPORT;
+    JUMPBOX='euw1-jumpbox.amz.mtmemgmt.com';
+    RPGHOST=$1;
+    RPGPORT=$2;
+    DBNAME=$3;
+    PGUSER=$4;
+    shift;
+    shift;
+    shift;
+    shift;
+    SOCKET=${HOME}/.ssh/${RPGHOST}-${RPGPORT}-${DBNAME}:${LPGPORT};
+    trap cleanup 0 1 2 3 6 15;
+    ssh -l mcunningham -i ~/.ssh/id_rsa_jumpbox -Nf -M -T -S ${SOCKET} -L ${LPGPORT}:${RPGHOST}:${RPGPORT} ${JUMPBOX};
+    echo "Host: $RPGHOST";
+    # psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" -W "$@";
+    psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+    ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
+}
