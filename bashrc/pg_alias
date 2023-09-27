@@ -54,6 +54,8 @@ alias pets-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-eas
 alias pets-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 pets -U postgres'
 alias luv-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-east-1.rds.amazonaws.com -p 5432 luv -U postgres'
 alias luv-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 luv -U postgres'
+alias luv-prod='opendb pets-tagged-pg.usw1.mtmeprod.com 5432 luv postgres'
+alias luv-pgb-stage='psql -h pgbouncer.pets-tagged-pgbouncer.arms.usw1.amz.mtmestage.com -p 5432 pgbouncer -U postgres'
 
 alias pdb01-prod='psql -h fdw-tagged-pg.usw1.mtmeprod.com -p 5432 pdb01 -U postgres'
 
