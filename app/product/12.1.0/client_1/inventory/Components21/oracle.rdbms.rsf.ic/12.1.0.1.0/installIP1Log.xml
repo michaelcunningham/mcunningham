@@ -1,0 +1,17 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<ACTION_LIST>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="libocci%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%ORACLE_HOME%/lib/libocci%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="null" TYPE="" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+</ACTION_LIST>

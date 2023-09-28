@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<ORACLEHOME_INFO>
+   <GUID>1195421170.#1999813518</GUID>
+   <HOME/>
+   <ARU_PLATFORM_INFO>
+      <ARU_ID>226</ARU_ID>
+      <ARU_ID_DESCRIPTION>Linux x86-64</ARU_ID_DESCRIPTION>
+   </ARU_PLATFORM_INFO>
+   <PROPERTY_LIST>
+      <PROPERTY NAME="ARCHITECTURE" VAL="64"/>
+   </PROPERTY_LIST>
+</ORACLEHOME_INFO>

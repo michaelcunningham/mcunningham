@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!-- Copyright (c) 2013 Oracle Corporation. All Rights Reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+
+<FILE_LIST>
+
+  <FILEGROUP NAME="filegroup2" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="lib/libocijdbc12.so"> %ORACLE_HOME%/lib/libocijdbc12.so </FILE>
+    <FILE STAGE_LOCATION="lib/libheteroxa12.so"> %ORACLE_HOME%/lib/libheteroxa12.so </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup1" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="ojdbc6.jar"> %ORACLE_HOME%/jdbc/lib/ojdbc6.jar </FILE>
+    <FILE STAGE_LOCATION="ojdbc7.jar"> %ORACLE_HOME%/jdbc/lib/ojdbc7.jar </FILE>
+  </FILEGROUP>
+
+</FILE_LIST>

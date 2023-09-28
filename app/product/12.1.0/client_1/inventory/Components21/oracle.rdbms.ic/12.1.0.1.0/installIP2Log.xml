@@ -1,0 +1,123 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<ACTION_LIST>
+<ACTION NAME="createDirRecurse" INSTALL="T" DEINSTALL="T">
+<LIB NAME="fileActions" VER="11.2.0.2.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="destination" VAL="%s_ezLocation%" TYPE="String" SECURE="F"/>
+<INPUT NAME="selectedNodes" VAL="null" TYPE="" SECURE="F"/>
+<INPUT NAME="permissions" VAL="755" TYPE="String" SECURE="F"/>
+<INPUT NAME="owner" VAL="null" TYPE="" SECURE="F"/>
+<INPUT NAME="group" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libclntsh%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libclntsh%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libclntshcore%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libclntshcore%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libheteroxa12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libheteroxa12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libnnz12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libnnz12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libocci%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libocci%SO_EXT%%SO_VER%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/lib/libocijdbc12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/libocijdbc12%SO_EXT%" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="createLink" INSTALL="T" DEINSTALL="T">
+<LIB NAME="unixActions" VER="10.2.0.3.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/jdbc/lib/ojdbc6.jar" TYPE="String" SECURE="F"/>
+<INPUT NAME="destination" VAL="%s_ezLocation%/ojdbc6.jar" TYPE="String" SECURE="F"/>
+<INPUT NAME="overwriteExistingLink" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="overwriteExistingDir" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="Spawn" INSTALL="T" DEINSTALL="F">
+<LIB NAME="SpawnActions" VER="10.1.0.3.4" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="installcommand" VAL="%ORACLE_HOME%/instclient.sh %ORACLE_HOME%" TYPE="String" SECURE="F"/>
+<INPUT NAME="deinstallcommand" VAL="" TYPE="String" SECURE="F"/>
+<INPUT NAME="WaitForCompletion" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="removeFile" INSTALL="T" DEINSTALL="F">
+<LIB NAME="fileActions" VER="11.2.0.2.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="selectedNodes" VAL="null" TYPE="" SECURE="F"/>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/instclient.sh" TYPE="String" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="removeFile" INSTALL="T" DEINSTALL="F">
+<LIB NAME="fileActions" VER="11.2.0.2.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="selectedNodes" VAL="null" TYPE="" SECURE="F"/>
+<INPUT NAME="source" VAL="%ORACLE_HOME%/flatten_file_list" TYPE="String" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+</ACTION_LIST>
