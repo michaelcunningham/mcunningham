@@ -25,10 +25,12 @@ alias dbadmin='cd /mnt/dba/admin/;pwd'
 alias mcunningham='cd ~/repos/mcunningham;pwd'
 alias mwc='cd ~/repos/mwc-playground;pwd'
 alias autovacuum='cd ~/repos/autovacuum;pwd'
-alias jumpbox_eu='ssh -l mcunningham -i id_rsa_jumpbox euw1-jumpbox.amz.mtmemgmt.com'
 alias runbox='ssh runbox1.scs.mtmeprod.net'
 alias tcred="/mnt/vmshare/tcred/create_terraform_credentials.sh ; source /mnt/vmshare/tcred/tcred.sh"
-alias pupmanage="/home/michael/repos/puppetscripts/pupmanage"
+alias pupmanage="~/repos/puppetscripts/pupmanage"
+alias jumpbox_eu='ssh -l mcunningham -i id_rsa_jumpbox euw1-jumpbox.amz.mtmemgmt.com'
+alias dba_jumpbox='ssh luminate@dba-ddbjumpbox-070a4466.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
+alias dj='ssh luminate@dba-ddbjumpbox-070a4466.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
 
 opendb ()
 {
