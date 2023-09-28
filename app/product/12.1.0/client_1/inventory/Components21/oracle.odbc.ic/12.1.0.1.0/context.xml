@@ -1,0 +1,46 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<COMP_CONTEXT>
+   <VAR_LIST SIZE="8">
+      <VAR NAME="s_windowsSystemRoot" TYPE="String" DESC_RES_ID="s_windowsSystemRoot_DESC" SECURE="F" VAL="foo" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_systemLocale" TYPE="String" DESC_RES_ID="s_systemLocale_DESC" SECURE="F" VAL="en" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+      <VAR NAME="s_registryRoot" TYPE="String" DESC_RES_ID="s_registryRoot_DESC" SECURE="F" VAL="HKEY_LOCAL_MACHINE" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_installType" TYPE="String" DESC_RES_ID="s_installType_DESC" SECURE="F" VAL="InstantClient" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_odbcLocation" TYPE="String" DESC_RES_ID="s_odbcLocation_DESC" SECURE="F" VAL="/home/michael/app/product/12.1.0/client_1\ODBC" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_odbcKey" TYPE="String" DESC_RES_ID="s_odbcKey_DESC" SECURE="F" VAL="software\odbc\odbcinst.ini\Oracle in OraClient12Home1" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_netAdminFolder" TYPE="String" DESC_RES_ID="s_netAdminFolder_DESC" SECURE="F" VAL="null\Network Administration" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="s_oracleBin" TYPE="String" DESC_RES_ID="s_oracleBin_DESC" SECURE="F" VAL="/home/michael/app/product/12.1.0/client_1" ADV="F" CLONABLE="F" USER_INPUT="CALC"/>
+      <VAR NAME="PROD_HOME" TYPE="String" DESC_RES_ID="" SECURE="F" VAL="/home/michael/app/product/12.1.0/client_1/bin" ADV="F" CLONABLE="T" USER_INPUT="CALC"/>
+   </VAR_LIST>
+   <CONST_LIST SIZE="27">
+      <CONST NAME="cs_shortcut_folder_odbc" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_shortcut_folder_odbc_ALL"/>
+      <CONST NAME="Custom" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_ALL"/>
+      <CONST NAME="s_netAdminFolder_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="s_installType_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="cs_noServicesForProcessException" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_noServicesForProcessException_ALL"/>
+      <CONST NAME="s_systemLocale_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL="system locale"/>
+      <CONST NAME="s_registryRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="Custom_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Custom_DESC_ALL"/>
+      <CONST NAME="COMPONENT_NAME" PLAT_SP="F" TYPE="String" TRANS="F" VAL="Oracle ODBC Driverfor Instant Client"/>
+      <CONST NAME="Typical_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_DESC_ALL"/>
+      <CONST NAME="s_odbcLocation_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="s_oracleBin_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="InstantClient_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="InstantClient_DESC_ALL"/>
+      <CONST NAME="s_windowsSystemRoot_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="s_odbcKey_DESC" PLAT_SP="F" TYPE="String" TRANS="F" VAL=""/>
+      <CONST NAME="COMPONENT_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="COMPONENT_DESC_ALL"/>
+      <CONST NAME="cs_shortcut_odbc" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_shortcut_odbc_ALL"/>
+      <CONST NAME="Typical" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Typical_ALL"/>
+      <CONST NAME="InstantClient" PLAT_SP="F" TYPE="String" TRANS="T" VAL="InstantClient_ALL"/>
+      <CONST NAME="cs_shortcut_odbc_admin" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_shortcut_odbc_admin_ALL"/>
+      <CONST NAME="cs_shortcut_folder_config" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_shortcut_folder_config_ALL"/>
+      <CONST NAME="cs_driverName" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_driverName_ALL"/>
+      <CONST NAME="Minimal_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimal_DESC_ALL"/>
+      <CONST NAME="cs_shortcut_odbc_ja" PLAT_SP="F" TYPE="String" TRANS="T" VAL="cs_shortcut_odbc_ja_ALL"/>
+      <CONST NAME="Complete_DESC" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_DESC_ALL"/>
+      <CONST NAME="Minimal" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Minimal_ALL"/>
+      <CONST NAME="Complete" PLAT_SP="F" TYPE="String" TRANS="T" VAL="Complete_ALL"/>
+   </CONST_LIST>
+</COMP_CONTEXT>

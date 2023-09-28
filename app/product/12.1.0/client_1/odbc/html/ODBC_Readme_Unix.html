@@ -1,0 +1,385 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+ 
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./ODBC_Readme_Unix_files/filelist.xml">
+<title>Oracle ODBC Driver for Unix Platforms Readme</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>akapila</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>user</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>15</o:TotalTime>
+  <o:Created>2006-06-15T11:59:00Z</o:Created>
+  <o:LastSaved>2009-05-21T11:18:00Z</o:LastSaved>
+  <o:Pages>2</o:Pages>
+  <o:Words>360</o:Words>
+  <o:Characters>2054</o:Characters>
+  <o:Company>Oracle Corporation</o:Company>
+  <o:Lines>17</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2522</o:CharactersWithSpaces>
+  <o:Version>9.6926</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+32/64&nbsp;
+bit</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+-------------</span>&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+2.2.14</span></p>
+
+
+2.2.12</span></p>
+
+
+
+2.2.12</span></p>
+
+
+2.2.12</span></p>
+
+
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin-right:0in;
+	mso-margin-top-alt:auto;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:87893387;
+	mso-list-type:hybrid;
+	mso-list-template-ids:364267348 -1062319988 -1214332802 451990682 -1898407216 -1851772628 -752869814 -2115496572 -873057466 1675780474;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:235865556;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1754011736 1617480776 2028531332 -466570588 -1101785464 -1207773132 47973356 -1305063094 341897566 1780226742;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:819156443;
+	mso-list-type:hybrid;
+	mso-list-template-ids:143180032 -1918618442 -1259337520 1854842362 68476844 1314152898 -1441898088 1630839112 -616131360 -657836226;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l3
+	{mso-list-id:1677998881;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1470502446 1214544726 -50825918 -277461472 -1854786684 -917470264 -152526064 783323112 741927694 273834790;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:1769961168;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-866212300 -1152351078 -1518537398 -702922054 1042037374 1451816434 142097920 -591917214 1710774664 310773256;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:2121610558;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1953221320 135400322 -817564842 -867421050 1373270576 1070626628 254565966 1331045234 1111110226 -260037792;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<meta name=author content="Subhranshu Banerjee">
+</head>
+
+<body lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<table border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;
+ mso-cellspacing:0in;mso-padding-alt:0in 0in 0in 0in' summary=layout>
+ <tr>
+  <td style='padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b>Oracle ODBC Driver for Unix platforms Readme</b> <br>
+  <b>Release 12.1</b><br>
+  <b>December, 2012</b></p>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+  </td>
+ </tr>
+</table>
+
+<h2><span style='color:#330099'>1 ODBC Driver for Unix platforms</span></h2>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'>Oracle&nbsp;ODBC Driver for
+Unix platforms complies with ODBC 3.52 specifications. It is based on features
+of Oracle 12.1 client. Please refer to Certification Matrix in
+section 2, to know about the platforms on which 12.1 ODBC driver is supported. <br>
+&nbsp;</p>
+
+<h3 style='margin-left:21.0pt;text-indent:-21.0pt'><span style='color:#330099'>1.1<span
+style='font-stretch: normal;font-size-adjust: none'></span></span><span
+style='font-size:7.0pt;color:#330099;font-weight:normal'>&nbsp;&nbsp; </span><span
+style='color:#330099'>Pre installation task &#8211; Install ODBC DM from unixODBC.org<o:p></o:p></span></h3>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l1 level1 lfo1;tab-stops:list .5in'>Please
+     install ODBC Driver Manager after downloading .tar file from
+     http://www.unixodbc.org/</li>
+</ul>
+
+<h3><span style='color:#330099'>1.2 Post installation task </span></h3>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l0 level1 lfo2;tab-stops:list .5in'>Configure
+     Oracle ODBC driver on Unix platforms<span style='color:#330099'> </span></li>
+</ul>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:30.0pt'>You can configure Oracle ODBC Driver by running
+&lt;install-home&gt;/odbc/utl/odbc_update_ini.sh </p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:30.0pt'>The utility &#8220;odbc_update_ini.sh&#8221; takes four command-line
+arguments</p>
+
+<ul style='margin-top:0in' type=disc>
+ <ul style='margin-top:0in' type=disc>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l5 level2 lfo3;
+      tab-stops:list 1.0in'>arg-1 : Complete path where unixODBC DM has been
+      installed.</li>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l5 level2 lfo3;
+      tab-stops:list 1.0in'>arg-2 : Complete path of driver install location
+      (optional); if this argument is not passed, the driver path is set to the
+      directory from where the utility is run.</li>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l5 level2 lfo3;
+      tab-stops:list 1.0in'>arg-3 : Driver name (optional); if this argument is
+      not passed, driver name is set to &#8220;Oracle 12c ODBC driver&#8221;.</li>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l5 level2 lfo3;
+      tab-stops:list 1.0in'>arg-4 : Data Source Name (optional); if no value is
+      passed, DSN is set to &#8220;OracleODBC-12c&#8221;.</li>
+ </ul>
+ <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l5 level1 lfo3;
+     tab-stops:list .5in'>Update/ verify values of environment variables such
+     as PATH, LD_LIBRARY_PATH, LIBPATH, TNS_ADMIN.</li>
+</ul>
+
+<h3><span style='color:#330099'>1.3 Uninstalling ODBC Driver</span></h3>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list .5in'>Update
+     ~/.odbc.ini file:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l2 level2 lfo4;tab-stops:list 1.0in'>Remove
+      DSN entry (e.g., &quot;OracleODBC-12c&quot;) from [ODBC Data Sources].</li>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l2 level2 lfo4;
+      tab-stops:list 1.0in'>Remove complete DSN information for corresponding
+      DSN.</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list .5in'>Update
+     &lt;ODBCDM_HOME&gt;/etc/odbcinst.ini file:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l2 level2 lfo4;
+      tab-stops:list 1.0in'>Remove driver information for &#8220;Oracle 12c ODBC
+      driver&#8221;.</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list .5in'>Remove
+     Oracle ODBC driver for Unix platforms </li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l2 level2 lfo4;
+      tab-stops:list 1.0in'>Delete libsqora.so.12.1</li>
+ </ul>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo4;tab-stops:list .5in'>&nbsp;Reset
+     environment variables such as PATH, LD_LIBRARY_PATH, LIBPATH, TNS_ADMIN.</li>
+</ul>
+
+<h3><span style='color:#330099'>1.4 Bugs Fixed</span></h3>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo5;tab-stops:list .5in'>Please
+     refer ODBC Release Notes.</li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2><span style='color:#330099'>2 Certification Matrix</span></h2>
+
+<p><span style="font-family:"Courier New"">We have certified Oracle ODBC driver for release 12.1 against DM 2.3.1 on the following Unix platforms.On 64bit Unix platforms DM 2.3.1 is built with the "-DBUILD_REAL_64_BIT_MODE -DSIZEOF_LONG=8 -fshort-wchar" flags and then certified.
+<span style='color:#330099'> </span></li>
+</p></ul>
+<p class=MsoNormal><b><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>Platform<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>32/64 bit <span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span>UnixODBC DM ver<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><b><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>--------------- <span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>--------- <span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span>---------------<o:p></o:p></span></b></p>
+
+<p style='margin:0in;margin-bottom:.0001pt'><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>Linux x86-64<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64 bit <span
+style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>Solaris SPARC64<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64 bit <span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>AIX5L<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64
+bit <span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>Solaris x64<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64 bit<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>HPUX.IA64<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64
+bit<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;<span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-spacerun:
+yes">&nbsp;&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Courier New"'><span
+style="mso-spacerun: yes">&nbsp; </span>ZLinux<span
+style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>32,64 bit
+<span style="mso-spacerun:
+yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+style="mso-spacerun: yes">&nbsp;&nbsp;</span>2.3.1<o:p></o:p></span></p>
+
+<p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt'>Please refer to Installation
+guide of each platform to know the different flavors of OS and Oracle Client
+software requirements.<br>
+&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<ACTION_LIST>
+<ACTION NAME="setenv" INSTALL="T" DEINSTALL="T">
+<LIB NAME="generalActions" VER="10.2.0.9.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="selectedNodes" VAL="%s_OPSSelectedNodes%" TYPE="String" SECURE="F"/>
+<INPUT NAME="name" VAL="ORACLE_HOME" TYPE="String" SECURE="F"/>
+<INPUT NAME="value" VAL="%ORACLE_HOME%" TYPE="String" SECURE="F"/>
+<INPUT NAME="append" VAL="false" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="replace" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="doNotPersistEnv" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="setenv" INSTALL="T" DEINSTALL="T">
+<LIB NAME="generalActions" VER="10.2.0.9.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="selectedNodes" VAL="%s_OPSSelectedNodes%" TYPE="String" SECURE="F"/>
+<INPUT NAME="name" VAL="LD_LIBRARY_PATH" TYPE="String" SECURE="F"/>
+<INPUT NAME="value" VAL="%ORACLE_HOME%/lib" TYPE="String" SECURE="F"/>
+<INPUT NAME="append" VAL="false" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="replace" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="doNotPersistEnv" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+<ACTION NAME="setenv" INSTALL="T" DEINSTALL="T">
+<LIB NAME="generalActions" VER="10.2.0.9.0" REP_VER="0.0" MIN_INST_VER="1.5.0.0.0"/>
+<INPUT_LIST>
+<INPUT NAME="selectedNodes" VAL="%s_OPSSelectedNodes%" TYPE="String" SECURE="F"/>
+<INPUT NAME="name" VAL="LD_LIBRARY_PATH" TYPE="String" SECURE="F"/>
+<INPUT NAME="value" VAL="%ORACLE_HOME%/network/lib" TYPE="String" SECURE="F"/>
+<INPUT NAME="append" VAL="true" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="replace" VAL="false" TYPE="Boolean" SECURE="F"/>
+<INPUT NAME="doNotPersistEnv" VAL="null" TYPE="" SECURE="F"/>
+</INPUT_LIST>
+<LOG_OBJ_LIST>
+</LOG_OBJ_LIST>
+</ACTION>
+</ACTION_LIST>

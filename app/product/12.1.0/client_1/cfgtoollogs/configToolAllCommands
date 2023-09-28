@@ -1,0 +1,2 @@
+# Copyright (c) 1999, 2013, Oracle. All rights reserved.
+/home/michael/app/product/12.1.0/client_1/oui/bin/runConfig.sh ORACLE_HOME=/home/michael/app/product/12.1.0/client_1 MODE=perform ACTION=configure RERUN=true $*

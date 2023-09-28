@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!-- Copyright (c) 2013 Oracle Corporation. All Rights Reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+
+<FILE_LIST>
+
+  <FILEGROUP NAME="filegroup4" ARCHIVED="TRUE" PERMS="0755">
+    <FILE STAGE_LOCATION="adrci"> %ORACLE_HOME%/bin/adrci </FILE>
+    <FILE STAGE_LOCATION="uidrvci"> %ORACLE_HOME%/bin/uidrvci </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup3" ARCHIVED="TRUE" PERMS="0755">
+    <FILE STAGE_LOCATION="wrc"> %ORACLE_HOME%/bin/wrc </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup2" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="libocci.so.12.1"> %ORACLE_HOME%/lib/libocci.so.12.1 </FILE>
+    <FILE STAGE_LOCATION="liboramysql12.so"> %ORACLE_HOME%/lib/liboramysql12.so </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup1" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="xstreams.jar"> %ORACLE_HOME%/rdbms/jlib/xstreams.jar </FILE>
+  </FILEGROUP>
+
+</FILE_LIST>

@@ -1,0 +1,501 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<PRD_LIST>
+<TL_LIST>
+<COMP NAME="oracle.client" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.client/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.client/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.client">
+   <EXT_NAME>Oracle Client 12c</EXT_NAME>
+   <DESC>Installs enterprise management tools, networking services, utilities, development tools and precompilers, and basic client software.</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/client/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/client/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.client.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.client.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/client/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.client.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/client/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.client.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+      <LANGSET IDX="2" BITSET="{0, 23}"/>
+      <LANGSET IDX="3" BITSET="{0}"/>
+      <LANGSET IDX="4" BITSET="{2}"/>
+      <LANGSET IDX="5" BITSET="{7}"/>
+      <LANGSET IDX="6" BITSET="{9}"/>
+      <LANGSET IDX="7" BITSET="{16}"/>
+      <LANGSET IDX="8" BITSET="{10}"/>
+      <LANGSET IDX="9" BITSET="{38}"/>
+      <LANGSET IDX="10" BITSET="{17}"/>
+      <LANGSET IDX="11" BITSET="{1}"/>
+      <LANGSET IDX="12" BITSET="{19}"/>
+      <LANGSET IDX="13" BITSET="{22}"/>
+      <LANGSET IDX="14" BITSET="{18}"/>
+      <LANGSET IDX="15" BITSET="{23}"/>
+      <LANGSET IDX="16" BITSET="{24}"/>
+      <LANGSET IDX="17" BITSET="{30}"/>
+      <LANGSET IDX="18" BITSET="{11}"/>
+      <LANGSET IDX="19" BITSET="{31}"/>
+      <LANGSET IDX="20" BITSET="{32}"/>
+      <LANGSET IDX="21" BITSET="{4}"/>
+      <LANGSET IDX="22" BITSET="{33}"/>
+      <LANGSET IDX="23" BITSET="{34}"/>
+      <LANGSET IDX="24" BITSET="{39}"/>
+      <LANGSET IDX="25" BITSET="{15}"/>
+      <LANGSET IDX="26" BITSET="{36}"/>
+      <LANGSET IDX="27" BITSET="{40}"/>
+      <LANGSET IDX="28" BITSET="{42}"/>
+      <LANGSET IDX="29" BITSET="{35}"/>
+      <LANGSET IDX="30" BITSET="{41}"/>
+      <LANGSET IDX="31" BITSET="{25, 29, 38}"/>
+      <LANGSET IDX="32" BITSET="{35, 41}"/>
+      <LANGSET IDX="33" BITSET="{0, 1, 4, 16, 22, 23, 24, 25, 35, 41}"/>
+      <LANGSET IDX="34" BITSET="{25}"/>
+      <LANGSET IDX="35" BITSET="{0, 1, 16, 23}"/>
+      <LANGSET IDX="36" BITSET="{}"/>
+      <LANGSET IDX="37" BITSET="{0, 1, 4, 6, 16, 18, 22, 23, 24, 25, 29, 35, 38, 41}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION% %s_TMPDIR_LOC% %s_TEMP_LOC%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST>
+      <DEP_GRP NAME="Optional" EXT_NAME="Optional" TYPE="O">
+         <DEP_LIST>
+            <DEP NAME="oracle.sqlj" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.rdbms.util" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.javavm.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.sqlplus" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.dbjava.jdbc" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ldap.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.rdbms.oci" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.precomp" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.xdk" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.doc" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.network.aso" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.oraolap.mgmt" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.network.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.network.cman" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.network.listener" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.assistants.netca.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ordim.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ons" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.odbc" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.has.client" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.dbdev" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ntoramts" VER="12.1.0.1.0" PLAT="ALL_PLATFORMS"/>
+            <DEP NAME="oracle.ntrdbms.admin" VER="12.1.0.1.0" PLAT="ALL_PLATFORMS"/>
+            <DEP NAME="oracle.ntoledb" VER="12.1.0.1.0" PLAT="ALL_PLATFORMS"/>
+            <DEP NAME="oracle.ntoledb.odp_net_2" VER="12.1.0.1.0" PLAT="ALL_PLATFORMS"/>
+            <DEP NAME="oracle.rdbms.scheduler" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.aspnet_2" VER="12.1.0.1.0" PLAT="ALL_PLATFORMS"/>
+         </DEP_LIST>
+      </DEP_GRP>
+      <DEP_GRP NAME="NCOptionalDecNow" EXT_NAME="NCOptionalDecNow" TYPE="O">
+         <DEP_LIST>
+            <DEP NAME="oracle.rdbms.install.common" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.rdbms.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.swd.oui" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.install.deinstalltool" VER="12.1.0.1.0" PLAT="Linux"/>
+         </DEP_LIST>
+      </DEP_GRP>
+   </DEP_GRP_LIST>
+   <DEP_LIST>
+      <DEP NAME="oracle.rdbms.ic" VER="12.1.0.1.0" DEP_GRP_NAME="NCOptionalDecNow" HOME_IDX="1"/>
+   </DEP_LIST>
+   <REF_LIST>
+      <REF NAME="oracle.client" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="InstantClient" NAME_ID="InstantClient" DESC_ID="InstantClient_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="45491"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+      <DEST VOLUME="%s_TMPDIR_LOC%" SPACE_REQ="0"/>
+      <DEST VOLUME="%s_TEMP_LOC%" SPACE_REQ="0"/>
+   </FILESIZEINFO>
+</COMP>
+</TL_LIST>
+<COMP_LIST>
+<COMP NAME="oracle.ldap.rsf.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="10.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.ldap.rsf.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.ldap.rsf.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.ldap.rsf.ic">
+   <EXT_NAME>SSL Required Support Files for InstantClient</EXT_NAME>
+   <DESC>includes the support files for SSL (Secure Socket Layer)</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/ldap/rsf/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/ldap/rsf/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.ldap.rsf.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.ldap.rsf.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/ldap/rsf/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.ldap.rsf.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/ldap/rsf/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.ldap.rsf.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Typical" NAME_ID="Typical" DESC_ID="Typical_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="6371783"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.odbc.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.odbc.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.odbc.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/bin">
+   <EXT_NAME>Oracle ODBC Driverfor Instant Client</EXT_NAME>
+   <DESC>Oracle ODBC Driver enables a wide variety of ODBC-compliant applications to work
+together with Oracle database servers.  The Oracle ODBC Driver acts as a translator 
+between the ODBC interface used by popular front-end applications and the native
+interface to Oracle databases.</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/odbc/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/odbc/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.odbc.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.odbc.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/odbc/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.odbc.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/odbc/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.odbc.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en ja"/>
+      <LANGSET IDX="1" BITSET="{0, 1}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="InstantClient" NAME_ID="InstantClient" DESC_ID="InstantClient_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="5161743"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.rdbms.rsf.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="10.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.rdbms.rsf.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.rdbms.rsf.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.rdbms.ic">
+   <EXT_NAME>RDBMS Required Support Files for Instant Client</EXT_NAME>
+   <DESC>includes the support files for the RDBMS</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/rdbms/rsf/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/rdbms/rsf/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.rdbms.rsf.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.rdbms.rsf.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/rdbms/rsf/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.rdbms.rsf.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/rdbms/rsf/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.rdbms.rsf.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Typical" NAME_ID="Typical" DESC_ID="Typical_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="3600210"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.nlsrtl.rsf.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="10.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.nlsrtl.rsf.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.nlsrtl.rsf.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle_nlsrtl_rsf_ic">
+   <EXT_NAME>Oracle Globalization Support</EXT_NAME>
+   <DESC>includes the files for Globalization Support</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/nlsrtl/rsf/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/nlsrtl/rsf/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.nlsrtl.rsf.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.nlsrtl.rsf.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/nlsrtl/rsf/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.nlsrtl.rsf.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/nlsrtl/rsf/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.nlsrtl.rsf.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.dbjava.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Typical" NAME_ID="Typical" DESC_ID=""/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="4196930"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.ons.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.ons.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.ons.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.ons.ic">
+   <EXT_NAME>Oracle Notification Service for Instant Client</EXT_NAME>
+   <DESC>Oracle Notification Service for Instant Client</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/ons/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/ons/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.ons.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.ons.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/ons/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.ons.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/ons/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.ons.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Complete" NAME_ID="Complete" DESC_ID="Complete_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="332839"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.dbjava.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.dbjava.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.dbjava.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle_dbjava_ic">
+   <EXT_NAME>Oracle JDBC/OCI Instant Client</EXT_NAME>
+   <DESC>provides a direct connection from a web browser to an Oracle database by emulating Net8 and TTC (the wire protocol used by Oracle Call Interface) on top of Java sockets.</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/dbjava/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/dbjava/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.dbjava.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.dbjava.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/dbjava/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.dbjava.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/dbjava/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.dbjava.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST>
+      <DEP_GRP NAME="Required" EXT_NAME="Required" TYPE="R">
+         <DEP_LIST>
+            <DEP NAME="oracle.nlsrtl.rsf.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+         </DEP_LIST>
+      </DEP_GRP>
+   </DEP_GRP_LIST>
+   <DEP_LIST>
+      <DEP NAME="oracle.nlsrtl.rsf.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+   </DEP_LIST>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Typical" NAME_ID="Typical" DESC_ID="Typical_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="6962173"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.sqlplus.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="0.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.sqlplus.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.sqlplus.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.sqlplus.ic">
+   <EXT_NAME>SQL*Plus Files for Instant Client</EXT_NAME>
+   <DESC>includes the support files for sqlplus</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/sqlplus/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/sqlplus/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.sqlplus.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.sqlplus.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/sqlplus/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.sqlplus.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/sqlplus/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.sqlplus.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST/>
+   <DEP_LIST/>
+   <REF_LIST>
+      <REF NAME="oracle.rdbms.ic" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="Typical" NAME_ID="Typical" DESC_ID="Typical_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="3110870"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+<COMP NAME="oracle.rdbms.ic" VER="12.1.0.1.0" BUILD_NUMBER="0" REP_VER="10.0.0.0.0" RELEASE="Production" INV_LOC="Components/oracle.rdbms.ic/12.1.0.1.0/1/" LANGS="en" XML_INV_LOC="Components21/oracle.rdbms.ic/12.1.0.1.0/" ACT_INST_VER="12.1.0.1.0" DEINST_VER="11.2.0.0.0" INSTALL_TIME="2019.Jan.25 11:45:16 PST" INST_LOC="/home/michael/app/product/12.1.0/client_1/oracle.rdbms.ic">
+   <EXT_NAME>Oracle Instant Client</EXT_NAME>
+   <DESC>ezclient application</DESC>
+   <DESCID>COMPONENT_DESC</DESCID>
+   <STG_INFO OSP_VER="10.2.0.0.0"/>
+   <CMP_JAR_INFO>
+      <INFO NAME="filemapObj" VAL="Components/oracle/rdbms/ic/v12_1_0_1_0/filemap.xml"/>
+      <INFO NAME="helpDir" VAL="Components/oracle/rdbms/ic/v12_1_0_1_0/help/"/>
+      <INFO NAME="actionsClass" VAL="Components.oracle.rdbms.ic.v12_1_0_1_0.CompActions"/>
+      <INFO NAME="resourceClass" VAL="Components.oracle.rdbms.ic.v12_1_0_1_0.resources.CompRes"/>
+      <INFO NAME="identifiersXML" VAL="Components/oracle/rdbms/ic/v12_1_0_1_0/identifiers.xml"/>
+      <INFO NAME="contextClass" VAL="Components.oracle.rdbms.ic.v12_1_0_1_0.CompContext"/>
+      <INFO NAME="fastCopyLogXML" VAL="Components/oracle/rdbms/ic/v12_1_0_1_0/fastCopyLog.xml"/>
+   </CMP_JAR_INFO>
+   <LOC_INFO INST_DFN_LOC="../Scripts" JAR_NAME="install1.jar"/>
+   <BOOK NAME="oracle.rdbms.ic.hs"/>
+   <PRE_REQ DEF="F"/>
+   <PROD_HOME DEF="F"/>
+   <LANG_IDX_MAP>
+      <LANG LIST="en fr ar bn pt_BR bg fr_CA ca hr cs da nl ar_EG en_GB et fi de el iw hu is in it ja ko es lv lt ms es_MX no pl pt ro ru zh_CN sk sl es_ES sv th zh_TW tr uk vi"/>
+      <LANGSET IDX="1" BITSET="{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44}"/>
+   </LANG_IDX_MAP>
+   <PLAT_IDX_MAP>
+      <PLAT LIST="46"/>
+      <PLATSET IDX="1" BITSET="{0}"/>
+   </PLAT_IDX_MAP>
+   <DST_IDX_MAP>
+      <DST LIST="%ORACLE_HOME% %INVENTORY_LOCATION%"/>
+   </DST_IDX_MAP>
+   <DEP_GRP_LIST>
+      <DEP_GRP NAME="Required" EXT_NAME="Required" TYPE="R">
+         <DEP_LIST>
+            <DEP NAME="oracle.odbc.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.dbjava.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ldap.rsf.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.rdbms.rsf.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.sqlplus.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+            <DEP NAME="oracle.ons.ic" VER="12.1.0.1.0" PLAT="Linux"/>
+         </DEP_LIST>
+      </DEP_GRP>
+   </DEP_GRP_LIST>
+   <DEP_LIST>
+      <DEP NAME="oracle.odbc.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+      <DEP NAME="oracle.dbjava.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+      <DEP NAME="oracle.ldap.rsf.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+      <DEP NAME="oracle.rdbms.rsf.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+      <DEP NAME="oracle.sqlplus.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+      <DEP NAME="oracle.ons.ic" VER="12.1.0.1.0" DEP_GRP_NAME="Required" HOME_IDX="1"/>
+   </DEP_LIST>
+   <REF_LIST>
+      <REF NAME="oracle.client" VER="12.1.0.1.0" HOME_IDX="1"/>
+   </REF_LIST>
+   <INST_TYPE_LIST>
+      <INST_TYPE NAME="InstantClient" NAME_ID="InstantClient" DESC_ID="InstantClient_DESC"/>
+   </INST_TYPE_LIST>
+   <FILESIZEINFO>
+      <DEST VOLUME="%ORACLE_HOME%" SPACE_REQ="204277053"/>
+      <DEST VOLUME="%INVENTORY_LOCATION%" SPACE_REQ="2000"/>
+   </FILESIZEINFO>
+</COMP>
+</COMP_LIST>
+<ONEOFF_LIST>
+</ONEOFF_LIST>
+<PATCHSET_UPDATE_LIST>
+</PATCHSET_UPDATE_LIST>
+</PRD_LIST>

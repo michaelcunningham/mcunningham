@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ins:AggregateInstance
+xmlns:ins="http://www.oracle.com/sysman/emCfg/AggregateInstance"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.oracle.com/sysman/emCfg/AggregateInstance oracle/sysman/emCfg/main/AggregateInstance.xsd"
+schemaVersion="1.0.0"
+family="CFM"
+timestamp="1548445537401"
+version="12.1.0.1.0"
+label="1">
+	<ins:Aggregate id="oracle.client" phase="N" type="COMPLEX" status="UNKNOWN" />
+	<ins:AggregateRef  wasAvailable="false" nsref="common" idRef="oracle.rdbms.scheduler" familyRef="CFM" isActive="false" />
+	<ins:AggregateRef  wasAvailable="false" nsref="common" idRef="oracle.network.cman" familyRef="CFM" isActive="false" />
+	<ins:AggregateRef  wasAvailable="false" nsref="common" idRef="oracle.assistants.netca.client" familyRef="CFM" isActive="false" />
+	<ins:AggregateRef  wasAvailable="true" nsref="common" idRef="OuiConfigVariables" versionRef="1.0.0.0.0" labelRef="1" familyRef="CFM" isActive="false" />
+	<ins:Action id="purgingdrastic" status="NOT_PERFORMED" >
+		<ins:ActionStep status="NOT_PERFORMED" index="0" priority="-2" >
+			<ins:AggregateActionInvocation nsref="common" aggregateFamilyRef="CFM" aggregateIdRef="oracle.assistants.netca.client" status="NOT_PERFORMED" />
+		</ins:ActionStep>
+	</ins:Action>
+	<ins:Action id="configuration" status="NOT_PERFORMED" >
+		<ins:ActionStep status="NOT_PERFORMED" index="0" priority="2" >
+			<ins:AggregateActionInvocation nsref="common" aggregateFamilyRef="CFM" aggregateIdRef="oracle.network.cman" status="NOT_PERFORMED" />
+		</ins:ActionStep>
+		<ins:ActionStep status="NOT_PERFORMED" index="1" priority="2" >
+			<ins:AggregateActionInvocation nsref="common" aggregateFamilyRef="CFM" aggregateIdRef="oracle.assistants.netca.client" status="NOT_PERFORMED" />
+		</ins:ActionStep>
+		<ins:ActionStep status="NOT_PERFORMED" index="2" priority="2" >
+			<ins:AggregateActionInvocation nsref="common" aggregateFamilyRef="CFM" aggregateIdRef="oracle.rdbms.scheduler" status="NOT_PERFORMED" />
+		</ins:ActionStep>
+	</ins:Action>
+</ins:AggregateInstance>

@@ -1,0 +1,26 @@
+<?xml version = '1.0' encoding = 'UTF-8' standalone = 'yes'?>
+
+<agg:Descriptions xmlns:agg="http://www.oracle.com/sysman/emCfg/AggregateDescriptions" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0.0" xsi:schemaLocation="http://www.oracle.com/sysman/emCfg/AggregateDescriptions" platform="Linux">
+   <agg:ComplexAggregate id="oracle.client">
+      <agg:Action id="purgingdrastic" types="purging:drastic" ignore_duplicate_references="true">
+         <agg:ActionStep required="true" priority="-2" standaloneonly="false">
+            <agg:AggregateActionRef owner="oracle.assistants.netca.client"/>
+         </agg:ActionStep>
+      </agg:Action>
+      <agg:Action id="configuration" types="configuration" ignore_duplicate_references="true">
+         <agg:ActionStep required="true" priority="2" standaloneonly="false">
+            <agg:AggregateActionRef owner="oracle.network.cman"/>
+         </agg:ActionStep>
+         <agg:ActionStep required="true" priority="2" standaloneonly="false">
+            <agg:AggregateActionRef owner="oracle.assistants.netca.client"/>
+         </agg:ActionStep>
+         <agg:ActionStep required="true" priority="2" standaloneonly="false">
+            <agg:AggregateActionRef owner="oracle.rdbms.scheduler"/>
+         </agg:ActionStep>
+      </agg:Action>
+      <agg:ComplexAggregateRef idref="oracle.network.cman" ownership="exclusive"/>
+      <agg:ComplexAggregateRef idref="oracle.assistants.netca.client" ownership="exclusive"/>
+      <agg:SimplestAggregateRef idref="OuiConfigVariables" ownership="exclusive"/>
+      <agg:ComplexAggregateRef idref="oracle.rdbms.scheduler" ownership="exclusive"/>
+   </agg:ComplexAggregate>
+</agg:Descriptions>

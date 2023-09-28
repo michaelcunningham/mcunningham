@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes" ?>
+<!-- Copyright (c) 1999, 2013, Oracle and/or its affiliates.
+All rights reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+<!-- Note: If there are any xml tools listed for suppression, the suppression shall be ignored and the xml tools shall be considered for execution during installation -->
+<CONFIG_LIST>
+<COMP NAME="oracle.ons.ic" VER="12.1.0.1.0" PLAT="Linux">
+   <CT NAME="configtool1" NAME_ID="configtool1_ALL" DESC_ID="configtool1_DESC_ALL" LOC="" AGGREGATE_NAME="oracle.ons.ic.12_1_0_1_0.xml" CLS_NAME="" PLAT="Linux"/>
+</COMP>
+</CONFIG_LIST>

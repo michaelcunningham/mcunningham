@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!-- Copyright (c) 2013 Oracle Corporation. All Rights Reserved. -->
+<!-- Do not modify the contents of this file by hand. -->
+
+<FILE_LIST>
+
+  <FILEGROUP NAME="filegroup3" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="libsqora.so.12.1"> %ORACLE_HOME%/lib/libsqora.so.12.1 </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup2" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="/ja/toc.htm"> %ORACLE_HOME%/odbc/help/ja/toc.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/oracle.gif"> %ORACLE_HOME%/odbc/help/ja/oracle.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/blafdoc.css"> %ORACLE_HOME%/odbc/help/ja/blafdoc.css </FILE>
+    <FILE STAGE_LOCATION="/ja/map.xml"> %ORACLE_HOME%/odbc/help/ja/map.xml </FILE>
+    <FILE STAGE_LOCATION="/ja/cpyr.htm"> %ORACLE_HOME%/odbc/help/ja/cpyr.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/sqora.htm"> %ORACLE_HOME%/odbc/help/ja/sqora.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/setup_work.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/setup_work.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/setup_ssmig.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/setup_ssmig.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/setup_ora.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/setup_ora.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/setup_app.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/setup_app.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/odbcmodel.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/odbcmodel.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/img_text/odbcdrvarch.htm"> %ORACLE_HOME%/odbc/help/ja/img_text/odbcdrvarch.htm </FILE>
+    <FILE STAGE_LOCATION="/ja/META-INF/MANIFEST.MF"> %ORACLE_HOME%/odbc/help/ja/META-INF/MANIFEST.MF </FILE>
+    <FILE STAGE_LOCATION="/ja/img/setup_app.gif"> %ORACLE_HOME%/odbc/help/ja/img/setup_app.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/img/odbcdrvarch.gif"> %ORACLE_HOME%/odbc/help/ja/img/odbcdrvarch.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/img/setup_ora.gif"> %ORACLE_HOME%/odbc/help/ja/img/setup_ora.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/img/setup_ssmig.gif"> %ORACLE_HOME%/odbc/help/ja/img/setup_ssmig.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/img/setup_work.gif"> %ORACLE_HOME%/odbc/help/ja/img/setup_work.gif </FILE>
+    <FILE STAGE_LOCATION="/ja/img/odbcmodel.gif"> %ORACLE_HOME%/odbc/help/ja/img/odbcmodel.gif </FILE>
+    <FILE STAGE_LOCATION="/us/toc.htm"> %ORACLE_HOME%/odbc/help/us/toc.htm </FILE>
+    <FILE STAGE_LOCATION="/us/oracle.gif"> %ORACLE_HOME%/odbc/help/us/oracle.gif </FILE>
+    <FILE STAGE_LOCATION="/us/blafdoc.css"> %ORACLE_HOME%/odbc/help/us/blafdoc.css </FILE>
+    <FILE STAGE_LOCATION="/us/map.xml"> %ORACLE_HOME%/odbc/help/us/map.xml </FILE>
+    <FILE STAGE_LOCATION="/us/cpyr.htm"> %ORACLE_HOME%/odbc/help/us/cpyr.htm </FILE>
+    <FILE STAGE_LOCATION="/us/sqora.htm"> %ORACLE_HOME%/odbc/help/us/sqora.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/setup_work.htm"> %ORACLE_HOME%/odbc/help/us/img_text/setup_work.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/setup_ssmig.htm"> %ORACLE_HOME%/odbc/help/us/img_text/setup_ssmig.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/setup_ora.htm"> %ORACLE_HOME%/odbc/help/us/img_text/setup_ora.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/setup_app.htm"> %ORACLE_HOME%/odbc/help/us/img_text/setup_app.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/odbcmodel.htm"> %ORACLE_HOME%/odbc/help/us/img_text/odbcmodel.htm </FILE>
+    <FILE STAGE_LOCATION="/us/img_text/odbcdrvarch.htm"> %ORACLE_HOME%/odbc/help/us/img_text/odbcdrvarch.htm </FILE>
+    <FILE STAGE_LOCATION="/us/META-INF/MANIFEST.MF"> %ORACLE_HOME%/odbc/help/us/META-INF/MANIFEST.MF </FILE>
+    <FILE STAGE_LOCATION="/us/img/setup_app.gif"> %ORACLE_HOME%/odbc/help/us/img/setup_app.gif </FILE>
+    <FILE STAGE_LOCATION="/us/img/odbcdrvarch.gif"> %ORACLE_HOME%/odbc/help/us/img/odbcdrvarch.gif </FILE>
+    <FILE STAGE_LOCATION="/us/img/setup_ora.gif"> %ORACLE_HOME%/odbc/help/us/img/setup_ora.gif </FILE>
+    <FILE STAGE_LOCATION="/us/img/setup_ssmig.gif"> %ORACLE_HOME%/odbc/help/us/img/setup_ssmig.gif </FILE>
+    <FILE STAGE_LOCATION="/us/img/setup_work.gif"> %ORACLE_HOME%/odbc/help/us/img/setup_work.gif </FILE>
+    <FILE STAGE_LOCATION="/us/img/odbcmodel.gif"> %ORACLE_HOME%/odbc/help/us/img/odbcmodel.gif </FILE>
+  </FILEGROUP>
+
+  <FILEGROUP NAME="filegroup1" ARCHIVED="TRUE">
+    <FILE STAGE_LOCATION="ODBCRelnotesUS.htm"> %ORACLE_HOME%/odbc/html/ODBCRelnotesUS.htm </FILE>
+    <FILE STAGE_LOCATION="ODBCRelnotesJA.htm"> %ORACLE_HOME%/odbc/html/ODBCRelnotesJA.htm </FILE>
+    <FILE STAGE_LOCATION="readme.txt"> %ORACLE_HOME%/odbc/html/readme.txt </FILE>
+    <FILE STAGE_LOCATION="ODBC_IC_Readme_Unix.html"> %ORACLE_HOME%/odbc/html/ODBC_IC_Readme_Unix.html </FILE>
+    <FILE STAGE_LOCATION="ODBC_Readme_Unix.html"> %ORACLE_HOME%/odbc/html/ODBC_Readme_Unix.html </FILE>
+  </FILEGROUP>
+
+</FILE_LIST>

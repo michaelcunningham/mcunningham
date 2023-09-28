@@ -1,0 +1,35 @@
+WARNING: Validation of XML schema is disabled because AggregateDescriptions.xsd could not be found
+INFO: Creating new CFM connection
+INFO: Creating a new logger for oracle.client
+INFO: Unmarshalling /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML/oracle.client.12_1_0_1_0.xml
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.network.cman
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.assistants.netca.client
+INFO: Creating a new logger for OuiConfigVariables
+INFO: Unmarshalling /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML/OuiConfigVariables.1_0_0_0_0.xml
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.rdbms.scheduler
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.network.cman:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.network.cman:common
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.assistants.netca.client:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.assistants.netca.client:common
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.rdbms.scheduler:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.rdbms.scheduler:common
+INFO: Aggregate Description oracle.client:12.1.0.1.0:common successfully loaded
+INFO: Aggregate Description OuiConfigVariables:1.0.0.0.0:common successfully loaded
+INFO: Successfully returning from CfmFactory.connect()
+INFO: Cfm.save() was called
+INFO: Cfm.save(): 2 aggregate instances saved
+INFO: CfmFactory.connect() was called
+WARNING: Validation of XML schema is disabled because AggregateDescriptions.xsd could not be found
+INFO: Creating new CFM connection
+INFO: Creating a new logger for oracle.client
+INFO: Unmarshalling /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML/oracle.client.12_1_0_1_0.xml
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.network.cman
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.assistants.netca.client
+INFO: Creating a new logger for OuiConfigVariables
+INFO: Unmarshalling /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML/OuiConfigVariables.1_0_0_0_0.xml
+INFO: No description found in /home/michael/app/product/12.1.0/client_1/inventory/ContentsXML/ConfigXML for aggregate=oracle.rdbms.scheduler
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.network.cman:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.network.cman:common
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.assistants.netca.client:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.assistants.netca.client:common
+WARNING: {oracle.sysman.emCfg.core.CfmAggregateRef ref to oracle.rdbms.scheduler:null:LATEST(unresolved_version):common} was marked unavailable: There are no loaded aggregates for oracle.rdbms.scheduler:common
+INFO: Aggregate Description oracle.client:12.1.0.1.0:common successfully loaded
+INFO: Aggregate Description OuiConfigVariables:1.0.0.0.0:common successfully loaded
+INFO: Successfully returning from CfmFactory.connect()
+INFO: Cfm.save() was called
+INFO: Cfm.save(): 2 aggregate instances saved
