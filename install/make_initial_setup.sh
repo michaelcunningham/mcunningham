@@ -36,6 +36,7 @@
 # sudo apt install npm -y
 # sudo apt install dos2unix -y
 # sudo apt install vim -y
+# sudo apt install screen -y
 
 # mkdir -p /home/michael/.aws
 # cp -rp /mnt/vmshare/virtualbox/.aws/* /home/michael/.aws

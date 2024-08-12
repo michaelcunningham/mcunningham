@@ -10,7 +10,7 @@ DB=pg
 USER=mcunningham
 
 ########################################################################################################################
-SQL_COMMAND="select  hi.hostname, i.port, d.database, s.primary_instance
+SQL_COMMAND="select  distinct hi.hostname, i.port, d.database, s.primary_instance
 from    pg.host_instances hi, pg.instances i, pg.standbys s, pg.databases d
 where   i.instance_group = d.instance_group
 and     i.instance_group = s.instance_group
