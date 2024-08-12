@@ -7,12 +7,22 @@ Quick install steps
 	git clone https://github.com/michaelcunningham/mcunningham.git .
 	source ./bashrc/bashrc_login
 
+    # unzip some files that are zipped
+    ./app/unzipit.sh
+
 To use these files add this line to the .bashrc file
 
-	source <repo_dir>/bashrc/bashrc_login
-	source ~/repos/mcunningham/bashrc/bashrc_login
-
 	echo "source ~/repos/mcunningham/bashrc/bashrc_login" >> ~/.bashrc
+
+If using sqlplus from this repo - add the following to the .bashrc file
+
+	echo >> ~/.bashrc
+	echo 'export ORACLE_HOME=~/repos/mcunningham/app/product/12.1.0/client_1' >> ~/.bashrc
+	echo 'export LD_LIBRARY_PATH=$ORACLE_HOME' >> ~/.bashrc
+	echo 'export PATH=$ORACLE_HOME:$PATH' >> ~/.bashrc
+
+    You will also need a tnsnames.ora file
+    mkdir -p ~/repos/mcunningham/app/product/12.1.0/client_1/network/admin
 
 May also need to run this on new servers
 
