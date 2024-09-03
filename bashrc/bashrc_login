@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 BASHRC_DIR=$(dirname $BASH_SOURCE)
 
