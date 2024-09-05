@@ -28,6 +28,8 @@
 # sudo apt install git -y
 # mkdir ~/repos
 # cd ~/repos
+# git config --global user.email "mcunningham@themeetgroup.com"
+# git config --global user.name "Michael Cunningham"
 # git clone https://github.com/michaelcunningham/mcunningham.git
 # The next can be done once the id_rsa files are setup
 # Then go to github and add SSH key - https://github.com/settings/keys
