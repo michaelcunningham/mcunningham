@@ -2,12 +2,7 @@ alias py27='sudo ln -fs /usr/bin/python2.7 /usr/bin/python'
 alias py3='sudo ln -fs /usr/bin/python3 /usr/bin/python3'
 alias py38='sudo ln -fs /usr/bin/python3.8 /usr/bin/python3'
 alias py39='sudo ln -fs /usr/bin/python3.9 /usr/bin/python3'
-if [ -e /usr/bin/vim.tiny ]
-then
-  alias vi='/usr/bin/vim.tiny'
-else
-  alias vi='/usr/bin/vim'
-fi
+alias vi='/usr/bin/vim'
 alias alertt='tail -50f /u01/app/oracle/diag/rdbms/*/$ORACLE_SID/trace/alert_$ORACLE_SID.log'
 #alias asm='ORAENV_ASK=NO ; export ORACLE_SID=+ASM ; . /usr/local/bin/oraenv -s ; . /mnt/oracle_downloads/ora/sh/set_ora_alias.sh'
 alias asm='ORAENV_ASK=NO ; export ORACLE_SID='$(ps x | grep pmon | awk '{print $5}' | cut -d_ -f3 | grep "+ASM")' ; . /usr/local/bin/oraenv -s ; . /mnt/oracle_downloads/ora/sh/set_ora_alias.sh'
@@ -38,7 +33,7 @@ alias runbox='ssh runbox1.scs.mtmeprod.net'
 alias tcred="/mnt/vmshare/tcred/create_terraform_credentials.sh ; source /mnt/vmshare/tcred/tcred.sh"
 alias pupmanage="~/repos/puppetscripts/pupmanage"
 alias jumpbox_eu='ssh -l mcunningham -i id_rsa_jumpbox euw1-jumpbox.amz.mtmemgmt.com'
-alias dbjump01='ssh dbjump01.tagged.com'
+alias dbjump01='ssh -o ServerAliveInterval=60 dbjump01.tagged.com'
 alias dba_jumpbox='ssh luminate@dba-ddbjumpbox-02ca775b.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
 alias dj='ssh luminate@dba-ddbjumpbox-02ca775b.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
 alias djs='ssh luminate@dba-ddbjumpbox-0cb6e0cf.usw1.amz.mtmestage.com@tmg-stage-ssh-gateway---dba-jumpbox@tmg-stage-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'

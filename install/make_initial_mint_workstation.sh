@@ -28,24 +28,29 @@
 # sudo apt install git -y
 # mkdir ~/repos
 # cd ~/repos
-# git clone git@github.com:michaelcunningham/mcunningham.git
+# git clone https://github.com/michaelcunningham/mcunningham.git
+# The next can be done once the id_rsa files are setup
+# Then go to github and add SSH key - https://github.com/settings/keys
+# git remote set-url origin git@github.com:michaelcunningham/mcunningham.git
 
 # sudo apt install mariadb-client-core -y
-sudo apt install postgresql-client -y
-sudo apt install screen -y
-sudo apt install dos2unix -y
-sudo apt install python3-pip -y
-sudo apt install python3-boto3 -y
-sudo apt install python3-botocore -y   # this will be installed with python3-boto3
-pip3 install duckdb --break-system-packages
+# sudo apt install postgresql-client -y
+# sudo apt install screen -y
+# sudo apt install dos2unix -y
+# sudo apt install python3-pip -y
+# sudo apt install python3-boto3 -y
+# sudo apt install python3-botocore -y   # this will be installed with python3-boto3
+# pip3 install duckdb --break-system-packages
 
-cd /mnt/install
-sudo ./aws/install --update
-mkdir -p ~/.aws
-cp -rp /mnt/vmshare/virtualbox/.aws/* ~/.aws
+# cd /mnt/install
+# sudo ./aws/install --update
+# mkdir -p ~/.aws
+# cp -rp /mnt/vmshare/virtualbox/.aws/* ~/.aws
 
 # This is for sqlplus
-cd /usr/lib/x86_64-linux-gnu/
-sudo ln -s libaio.so.1t64 libaio.so.1
+# cd /usr/lib/x86_64-linux-gnu/
+# sudo ln -s libaio.so.1t64 libaio.so.1
 
-
+# sudo apt install vim
+# sudo update-alternatives --config editor
+#   change to use vim.basic
