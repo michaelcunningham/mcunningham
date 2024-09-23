@@ -56,3 +56,49 @@
 # sudo apt install vim
 # sudo update-alternatives --config editor
 #   change to use vim.basic
+
+# sudo apt install jq -y
+
+# Created a ~/.ssh/config file with the following
+ost gerrit.meetmecorp.com
+ HostName gerrit.meetmecorp.com
+ IdentityFile ~/.ssh/id_rsa_gerrit
+
+Host *
+    StrictHostKeyChecking no
+    UserKnownHostsFile=/dev/null
+    ServerAliveInterval 300
+    ServerAliveCountMax 2
+    HostKeyAlgorithms=+ssh-rsa
+
+Host mmdb-tagged-pgbouncer*.mtmeprod.com
+#  User mcunningham
+  ProxyJump euw1-jumpbox.amz.mtmemgmt.com
+#  IdentityFile ~/.ssh/id_rsa.pub
+#  RemoteCommand ssh -A mcunningham@%n
+
+Host 10.164.*
+  ProxyJump euw1-jumpbox.amz.mtmemgmt.com
+
+Host video-lovoo-aurora*.rds.amazonaws.com
+  ProxyJump euw1-jumpbox.amz.mtmemgmt.com
+
+Host runbox1.scs.mtmeprod.net
+  User luminate_ro@scs-connector
+  HostName scs-connector.ssh.tmg.luminatesec.com
+  IdentityFile ~/.ssh/luminate_ssh_key.pem
+  RemoteCommand ssh -A luminate@%n
+  RequestTTY yes
+
+# Then set permissions
+# chmod 600 ~/.ssh/config
+
+# This part is for infoblox
+# pip3 install infoblox_client --break-system-packages
+# pip3 install pyOpenSSL --break-system-packages
+# sudo ln -s /usr/lib/postgresql/16/bin/pg_config /usr/bin/pg_config
+# sudo apt install libpq-dev -y
+# pip3 install psycopg2 --break-system-packages
+# create the ~/.netrc file
+# chmod 600 ~/.netrc
+
