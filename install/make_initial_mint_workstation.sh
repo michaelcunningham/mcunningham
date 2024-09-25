@@ -1,3 +1,7 @@
+# Linux Mint 22 (Wilma) is based off of Ubuntu 24.04 (noble)
+# cat /etc/os-release
+# /etc/upstream-release/lsb-release
+#
 # First thing is to add the following line to sudoers file
 # Change visudo editor with:
 #    sudo update-alternatives --config editor
@@ -60,7 +64,7 @@
 # sudo apt install jq -y
 
 # Created a ~/.ssh/config file with the following
-ost gerrit.meetmecorp.com
+host gerrit.meetmecorp.com
  HostName gerrit.meetmecorp.com
  IdentityFile ~/.ssh/id_rsa_gerrit
 
@@ -101,4 +105,7 @@ Host runbox1.scs.mtmeprod.net
 # pip3 install psycopg2 --break-system-packages
 # create the ~/.netrc file
 # chmod 600 ~/.netrc
+
+# Install Java Development Kit so I have jconsole to pause qcontrol
+# sudo apt install openjdk-11-jdk
 
