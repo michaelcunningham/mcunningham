@@ -109,3 +109,19 @@ Host runbox1.scs.mtmeprod.net
 # Install Java Development Kit so I have jconsole to pause qcontrol
 # sudo apt install openjdk-11-jdk
 
+# Install xterm so window can be resized with command line
+# sudo apt install xterm
+
+# The following is to get rid of postgresql-16 stuff and install postgresql-12 stuff
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACcc4CF8
+# echo "deb http://apt.postgresql.org/pub/repos/apt noble-pgdg main" | sudo tee /etc/apt/sources.list.d/pgdg.list
+# sudo apt update
+# sudo apt remove postgresql-client postgresql-client-16 postgresql-client-common
+# sudo apt install postgresql-client-12 postgresql-client-common
+
+# The following was installed to prepare for script development for confluence page updates
+# It is not needed normally
+# sudo pip3 uninstall psycopg2 --break-system-packages  - this is just in case the psycopg2 module is installed
+# sudo pip3 install psycopg2-binary --break-system-packages
+# sudo pip3 install pystache --break-system-packages
+

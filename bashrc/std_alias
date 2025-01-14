@@ -37,6 +37,7 @@ alias dbjump01='ssh -o ServerAliveInterval=60 dbjump01.tagged.com'
 alias dba_jumpbox='ssh luminate@dba-ddbjumpbox-02ca775b.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
 alias dj='ssh luminate@dba-ddbjumpbox-02ca775b.use1.amz.mtmemgmt.com@tmg-prod-ssh-gateway---dba-jumpbox@tmg-prod-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
 alias djs='ssh luminate@dba-ddbjumpbox-0cb6e0cf.usw1.amz.mtmestage.com@tmg-stage-ssh-gateway---dba-jumpbox@tmg-stage-ssh-gateway---dba-jumpbox.ssh.tmg.luminatesec.com -i ~/.ssh/luminate_ssh_key.pem'
+alias sit='resize -s 24 160'
 
 opendb ()
 {

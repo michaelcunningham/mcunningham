@@ -12,6 +12,7 @@ alias pg_alias='vi ~/repos/mcunningham/bashrc/pg_alias ; . ~/repos/mcunningham/b
 alias pg9='sudo ln -fs /usr/pgsql-9.6/bin/psql /usr/bin/psql'
 alias pg10='sudo ln -fs /usr/pgsql-10/bin/psql /usr/bin/psql'
 alias pg12='sudo ln -fs /usr/share/postgresql-common/pg_wrapper /usr/bin/psql'
+alias pg16='sudo ln -fs /usr/share/postgresql-common/pg_wrapper /usr/bin/psql'
 
 alias mmdb='cd /mnt/dba/projects/mmdb_conversion;pwd'
 alias qdb='cd /mnt/dba/projects/qdb_conversion;pwd'
@@ -107,6 +108,8 @@ alias popgun='psql -h popgundb.use1.amz.mtmeprod.com -p 5432 -d pg -U postgres'
 alias econtrans-prod='psql -h econtransdb-aurora-postgresql.amz.mtmeprod.com -p 5432 -d economy_transaction -U postgres'
 alias econtrans-prod-ro='psql -h econtransdb-aurora-postgresql-ro.amz.mtmeprod.com -p 5432 -d economy_transaction -U postgres'
 alias econorders-prod='psql -h econtransdb-aurora-postgresql.amz.mtmeprod.com -p 5432 -d economy_order -U postgres'
+alias econtrans-stage='psql -h econtransdb-aurora-postgresql.amz.mtmestage.com -p 5432 -d economy_transaction -U postgres'
+alias econorders-stage='psql -h econtransdb-aurora-postgresql.amz.mtmestage.com -p 5432 -d economy_order -U postgres'
 alias rso='psql -h rso-pgsql.use1.amz.mtmeprod.com -p 5432 -d rso -U postgres'
 
 alias mars-stage='psql -h mars-pgsql.use1.amz.mtmestage.com -p 5432 -U postgres -d mars -U postgres'
@@ -150,5 +153,5 @@ alias video-meetme-stage='psql -h video-pg-meetme.use1.amz.mtmestage.com -p 5432
 alias video-tagged-stage='psql -h video-pg-tagged.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 alias video-zeta-stage='psql -h video-zeta-pg.use1.amz.mtmestage.com -p 5432 -d video -U postgres'
 
-alias datalake='psql -h mm-events.scs.mtmeprod.net -p 5439 -d evdata -U mcunningham'
+alias datalake='psql -X -h mm-events.scs.mtmeprod.net -p 5439 -d evdata -U mcunningham'
 
