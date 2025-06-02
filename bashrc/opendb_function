@@ -1,0 +1,39 @@
+opendb ()
+{
+    function cleanup ()
+    {
+        ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
+    };
+    function lport ()
+    {
+        lower=10000;
+        upper=32000;
+        rand=$(od -A n -D -N 2 /dev/urandom | tr -d ' ');
+        while [ "$rand" -gt "$upper" -o "$rand" -lt "$lower" ]; do
+            rand=$(od -A n -D -N 2 /dev/urandom | tr -d ' ');
+        done;
+        # echo $rand;
+        LPGPORT=$rand
+    };
+    local LPGPORT=5432;
+    lport;
+    # echo $LPGPORT;
+    JUMPBOX='euw1-jumpbox.amz.mtmemgmt.com';
+    RPGHOST=$1;
+    RPGPORT=$2;
+    DBNAME=$3;
+    PGUSER=$4;
+    shift;
+    shift;
+    shift;
+    shift;
+    # SOCKET=${HOME}/.ssh/${RPGHOST}-${RPGPORT}-${DBNAME}:${LPGPORT};
+    # The following technique was used to shorten the length of the RPGHOST variable in the SOCKET string
+    SOCKET=${HOME}/.ssh/$(echo ${RPGHOST} | cut -c1-20)-${RPGPORT}-${DBNAME}:${LPGPORT};
+    trap cleanup 0 1 2 3 6 15;
+    ssh -o LogLevel=error -l mcunningham -i ~/.ssh/id_rsa_jumpbox -Nf -M -T -S ${SOCKET} -L ${LPGPORT}:${RPGHOST}:${RPGPORT} ${JUMPBOX};
+    # echo "Host: $RPGHOST";
+    # psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" -W "$@";
+    psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+    ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
+}

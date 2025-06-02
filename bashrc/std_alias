@@ -53,12 +53,12 @@ opendb ()
         while [ "$rand" -gt "$upper" -o "$rand" -lt "$lower" ]; do
             rand=$(od -A n -D -N 2 /dev/urandom | tr -d ' ');
         done;
-        echo $rand;
+        # echo $rand;
         LPGPORT=$rand
     };
     local LPGPORT=5432;
     lport;
-    echo $LPGPORT;
+    # echo $LPGPORT;
     JUMPBOX='euw1-jumpbox.amz.mtmemgmt.com';
     RPGHOST=$1;
     RPGPORT=$2;
@@ -68,11 +68,21 @@ opendb ()
     shift;
     shift;
     shift;
-    SOCKET=${HOME}/.ssh/${RPGHOST}-${RPGPORT}-${DBNAME}:${LPGPORT};
+    # SOCKET=${HOME}/.ssh/${RPGHOST}-${RPGPORT}-${DBNAME}:${LPGPORT};
+    # The following technique was used to shorten the length of the RPGHOST variable in the SOCKET string
+    # SOCKET=${HOME}/.ssh/$(echo ${RPGHOST} | cut -d. -f1)-${RPGPORT}-${DBNAME}:${LPGPORT};
+    SOCKET=${HOME}/.ssh/$(echo ${RPGHOST} | cut -c1-20)-${RPGPORT}-${DBNAME}:${LPGPORT};
     trap cleanup 0 1 2 3 6 15;
-    ssh -l mcunningham -i ~/.ssh/id_rsa_jumpbox -Nf -M -T -S ${SOCKET} -L ${LPGPORT}:${RPGHOST}:${RPGPORT} ${JUMPBOX};
-    echo "Host: $RPGHOST";
+    ssh -o LogLevel=error -l mcunningham -i ~/.ssh/id_rsa_jumpbox -Nf -M -T -S ${SOCKET} -L ${LPGPORT}:${RPGHOST}:${RPGPORT} ${JUMPBOX};
+    # echo "Host: $RPGHOST";
     # psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" -W "$@";
-    psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+    PG_PASS=$(grep ${RPGHOST} ~/.pgpass | grep -v "^#" | cut -d: -f5)
+    if [ -n $PG_PASS ]
+    then
+        PGPASSWORD=$PG_PASS psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+    else
+        psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+    fi
     ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
 }
+
