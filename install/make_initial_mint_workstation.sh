@@ -47,6 +47,7 @@
 # sudo apt install python3-boto3 -y
 # sudo apt install python3-botocore -y   # this will be installed with python3-boto3
 # pip3 install duckdb --break-system-packages
+# sudo curl https://install.duckdb.org | sh   # to install the command line tool
 
 # cd /mnt/install
 # sudo ./aws/install --update

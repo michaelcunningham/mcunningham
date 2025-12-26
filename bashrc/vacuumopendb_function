@@ -1,4 +1,4 @@
-opendb ()
+vacuumopendb ()
 {
     function cleanup ()
     {
@@ -37,10 +37,12 @@ opendb ()
     PG_PASS=$(grep ${RPGHOST} ~/.pgpass | grep -v "^#" | cut -d: -f5)
     if [ -n $PG_PASS ]
     then
-        PGPASSWORD=$PG_PASS psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+        echo "Trying first option"
+        PGPASSWORD=$PG_PASS vacuumdb -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
     else
-        psql -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
+        vacuumdb -h localhost -p "${LPGPORT}" -d "${DBNAME}" -U "${PGUSER}" "$@";
     fi
     # ssh -T -S ${SOCKET} -O exit ${JUMPBOX}
 }
+
 

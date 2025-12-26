@@ -93,3 +93,8 @@
 
 # For pupmanage
 # sudo apt install python3-github
+
+# For using AWS Glue with DynamoDB
+# pip3 install pyspark --break-system-packages
+# pip3 install awsglue3-local --break-system-packages
+
