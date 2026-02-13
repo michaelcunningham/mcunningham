@@ -34,6 +34,10 @@ alias emails='cd ~/repos/emails_conversion;pwd'
 alias ratelimits='cd ~/repos/ratelimits_conversion;pwd'
 alias puser='cd ~/repos/puser_conversion;pwd'
 alias alerts='cd ~/repos/alerts_conversion;pwd'
+alias global='cd ~/repos/global_database;pwd'
+alias util='cd ~/repos/util;pwd'
+alias page='cd ~/repos/pagestate_conversion;pwd'
+alias tos='cd ~/repos/tos_conversion;pwd'
 
 alias mmdb-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-east-1.rds.amazonaws.com -p 5432 mmdb -U postgres'
 alias mmdb-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 mmdb -U postgres'
@@ -63,7 +67,7 @@ alias pdb01-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 pdb01 -U 
 alias pdb02-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 pdb02 -U postgres'
 # alias pets-dev='psql -h ora2pg-dev-aurora-postgresql.cluster-c3a6uerjxldb.us-east-1.rds.amazonaws.com -p 5432 pets -U postgres'
 alias pets-dev='psql -h pets-tagged-aurora-postgresql.use1.amz.mtmetest.com -p 5432 pets -U postgres'
-alias pets-stage='psql -h ora2pg-tagged-pg.usw1.mtmestage.com -p 5432 pets -U postgres'
+alias pets-stage='psql -h pets-tagged-pg.use1.amz.mtmestage.com -p 5432 pets -U postgres'
 alias pets-stage-use='psql -h pets-tagged-pg.use1.amz.mtmestage.com -p 5432 pets -U postgres'
 # alias pets-prod='opendb pets-tagged-pg.usw1.mtmeprod.com 5432 pets postgres'
 alias pets-prod='psql -h pets-tagged-pg.usw1.mtmeprod.com -p 5432 pets -U postgres'
@@ -74,6 +78,7 @@ alias luv-prod='opendb pets-tagged-pg.usw1.mtmeprod.com 5432 luv postgres'
 
 alias pgb-qdb-prod='psql -h pgbouncer.qdb-tagged-pgbouncer.arms.usw1.amz.mtmeprod.com -p 5432 pgbouncer -U postgres'
 alias pgb-luv-stage='psql -h pgbouncer.pets-tagged-pgbouncer.arms.usw1.amz.mtmestage.com -p 5432 pgbouncer -U postgres'
+alias pgb-pets-prod-usw1='psql -h pgbouncer.pets-tagged-pgbouncer.arms.usw1.amz.mtmeprod.com -p 5432 pgbouncer -U postgres'
 alias pgb-pets-stage-usw1='psql -h pgbouncer.pets-tagged-pgbouncer.arms.usw1.amz.mtmestage.com -p 5432 pgbouncer -U postgres'
 alias pgb-pets-stage-use1='psql -h pgbouncer.pets-tagged-pgbouncer.arms.use1.amz.mtmestage.com -p 5432 pgbouncer -U postgres'
 
@@ -139,6 +144,7 @@ alias inventory-prod='psql -h inventory-pgsql.use1.amz.mtmeprod.com -p 5432 -d i
 alias eu-inventory-stage='opendb inventory-pgsql.euw1.amz.mtmestage.com 5432 inventory postgres'
 alias eu-levels-stage='opendb levels-pgsql.euw1.amz.mtmestage.com 5432 levels postgres'
 alias eu-video-lovoo-stage='opendb video-pg-lovoo.euw1.amz.mtmestage.com 5432 video postgres'
+alias eu-mars-stage='opendb mars-pgsql.euw1.amz.mtmestage.com 5432 mars postgres'
 
 alias eu-broadcast-hist-prod='opendb broadcast-hist-pgsql.euw1.amz.mtmeprod.com 5432 broadcast_history postgres'
 alias eu-econorders-prod='opendb econsdb-aurora.euw1.amz.mtmeprod.com 5432 economy_order postgres'
@@ -187,3 +193,5 @@ alias video-zeta-stage='psql -h video-zeta-pg.use1.amz.mtmestage.com -p 5432 -d 
 alias datalake='psql -X -h mm-events.use1.amz.mtmemgmt.com -p 5439 -d evdata -U mcunningham'
 # alias datalake='psql -X -h meetme-data-lake.cbvfzusvb9wl.us-east-1.redshift.amazonaws.com -p 5439 -d evdata -U mcunningham'
 
+alias qdb-stage-test='psql -h ora2pg-tagged-aurora-postgresql-test.cluster-cngld29wkrzr.us-west-1.rds.amazonaws.com -p 5432 qdb -U postgres'
+alias qdb-stage-test-east='psql -h ora2pg-tagged-aurora-postgresql-test-use1.global-gbrbkuz2ps5c.global.rds.amazonaws.com -p 5432 qdb -U postgres'
